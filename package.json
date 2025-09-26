@@ -1,0 +1,25 @@
+{
+  "name": "ccpsdemographics-v2-nodejs",
+  "version": "1.0.0",
+  "description": "Serverless API to fetch data from MongoDB Atlas collection",
+  "main": "src/handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serverless offline",
+    "deploy": "serverless deploy"
+  },
+  "keywords": ["serverless"],
+  "author": "Thomas Liu",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "mongodb": "^6.20.0",
+    "serverless": "^4.19.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "serverless": "^3.38.0",
+    "serverless-offline": "^13.3.3",
+    "serverless-dotenv-plugin": "^6.0.0"
+  }
+}
