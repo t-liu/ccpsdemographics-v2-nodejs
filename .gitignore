@@ -1,0 +1,47 @@
+#Node.js
+node_modules/ 
+npm-debug.log 
+yarn-error.log 
+package-lock.json 
+yarn.lock
+
+#Serverless Framework
+.serverless/ 
+.sls 
+serverless.yml.bak
+
+#Environment variables
+.env 
+.env.local 
+.env.development 
+.env.test 
+.env.production
+
+#Logs
+logs/ 
+*.log 
+.log.
+
+#Build artifacts
+dist/ 
+build/
+
+#IDE and editor files
+.vscode/ 
+.idea/ 
+*.sublime-project 
+*.sublime-workspace
+.cursor/
+
+#OS-specific files
+.DS_Store 
+Thumbs.db
+
+#Temporary files
+*.tmp 
+*.bak 
+*.swp 
+*~
+
+#Coverage reports
+coverage/
