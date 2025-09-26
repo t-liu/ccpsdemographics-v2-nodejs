@@ -17,11 +17,25 @@ provider:
           Resource: "*"
 
 functions:
-  getItems:
-    handler: src/handler.getItems
+  getSchools:
+    handler: src/handler.getSchools
     events:
       - http:
-          path: /items
+          path: /schools
+          method: get
+          cors: true
+  getSchoolsByYear:
+    handler: src/handler.getSchoolsByYear
+    events:
+      - http:
+          path: /schools/year/{academicYear}
+          method: get
+          cors: true
+  getSchoolById:
+    handler: src/handler.getSchoolById
+    events:
+      - http:
+          path: /schools/{schoolId}
           method: get
           cors: true
 
