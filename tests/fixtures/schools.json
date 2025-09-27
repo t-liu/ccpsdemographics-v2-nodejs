@@ -1,0 +1,977 @@
+[
+    {
+        "_id": {
+            "$oid": "68d6ad7c32eb2f8c39112bab"
+        },
+        "schoolId": "80701",
+        "name": "MATTHEW HENSON MIDDLE SCHOOL",
+        "location": {
+            "address": "3535 Livingston Road",
+            "city": "Indian Head",
+            "state": "MD",
+            "zipCode": "20640",
+            "coordinates": {
+                "type": "Point",
+                "coordinates": [
+                    {
+                        "$numberDouble": "-77.0769214"
+                    },
+                    {
+                        "$numberDouble": "38.6140072"
+                    }
+                ]
+            }
+        },
+        "level": "M",
+        "levelFull": "Middle",
+        "yearlyData": [
+            {
+                "academicYear": {
+                    "full": "2005-2006",
+                    "short": "05-06",
+                    "startYear": {
+                        "$numberInt": "2005"
+                    },
+                    "endYear": {
+                        "$numberInt": "2006"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "415"
+                    },
+                    "hispanic": {
+                        "$numberInt": "16"
+                    },
+                    "white": {
+                        "$numberInt": "352"
+                    },
+                    "other": {
+                        "$numberInt": "42"
+                    },
+                    "total": {
+                        "$numberInt": "825"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2006-2007",
+                    "short": "06-07",
+                    "startYear": {
+                        "$numberInt": "2006"
+                    },
+                    "endYear": {
+                        "$numberInt": "2007"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "494"
+                    },
+                    "hispanic": {
+                        "$numberInt": "21"
+                    },
+                    "white": {
+                        "$numberInt": "355"
+                    },
+                    "other": {
+                        "$numberInt": "40"
+                    },
+                    "total": {
+                        "$numberInt": "910"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2007-2008",
+                    "short": "07-08",
+                    "startYear": {
+                        "$numberInt": "2007"
+                    },
+                    "endYear": {
+                        "$numberInt": "2008"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "383"
+                    },
+                    "hispanic": {
+                        "$numberInt": "14"
+                    },
+                    "white": {
+                        "$numberInt": "194"
+                    },
+                    "other": {
+                        "$numberInt": "17"
+                    },
+                    "total": {
+                        "$numberInt": "608"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2008-2009",
+                    "short": "08-09",
+                    "startYear": {
+                        "$numberInt": "2008"
+                    },
+                    "endYear": {
+                        "$numberInt": "2009"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "378"
+                    },
+                    "hispanic": {
+                        "$numberInt": "19"
+                    },
+                    "white": {
+                        "$numberInt": "196"
+                    },
+                    "other": {
+                        "$numberInt": "15"
+                    },
+                    "total": {
+                        "$numberInt": "608"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2009-2010",
+                    "short": "09-10",
+                    "startYear": {
+                        "$numberInt": "2009"
+                    },
+                    "endYear": {
+                        "$numberInt": "2010"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "356"
+                    },
+                    "hispanic": {
+                        "$numberInt": "14"
+                    },
+                    "white": {
+                        "$numberInt": "177"
+                    },
+                    "other": {
+                        "$numberInt": "13"
+                    },
+                    "total": {
+                        "$numberInt": "560"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2010-2011",
+                    "short": "10-11",
+                    "startYear": {
+                        "$numberInt": "2010"
+                    },
+                    "endYear": {
+                        "$numberInt": "2011"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "325"
+                    },
+                    "hispanic": {
+                        "$numberInt": "24"
+                    },
+                    "white": {
+                        "$numberInt": "182"
+                    },
+                    "other": {
+                        "$numberInt": "39"
+                    },
+                    "total": {
+                        "$numberInt": "570"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2011-2012",
+                    "short": "11-12",
+                    "startYear": {
+                        "$numberInt": "2011"
+                    },
+                    "endYear": {
+                        "$numberInt": "2012"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "333"
+                    },
+                    "hispanic": {
+                        "$numberInt": "23"
+                    },
+                    "white": {
+                        "$numberInt": "148"
+                    },
+                    "other": {
+                        "$numberInt": "44"
+                    },
+                    "total": {
+                        "$numberInt": "548"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2012-2013",
+                    "short": "12-13",
+                    "startYear": {
+                        "$numberInt": "2012"
+                    },
+                    "endYear": {
+                        "$numberInt": "2013"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "448"
+                    },
+                    "hispanic": {
+                        "$numberInt": "34"
+                    },
+                    "white": {
+                        "$numberInt": "168"
+                    },
+                    "other": {
+                        "$numberInt": "65"
+                    },
+                    "total": {
+                        "$numberInt": "715"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2013-2014",
+                    "short": "13-14",
+                    "startYear": {
+                        "$numberInt": "2013"
+                    },
+                    "endYear": {
+                        "$numberInt": "2014"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "451"
+                    },
+                    "hispanic": {
+                        "$numberInt": "39"
+                    },
+                    "white": {
+                        "$numberInt": "144"
+                    },
+                    "other": {
+                        "$numberInt": "62"
+                    },
+                    "total": {
+                        "$numberInt": "696"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2014-2015",
+                    "short": "14-15",
+                    "startYear": {
+                        "$numberInt": "2014"
+                    },
+                    "endYear": {
+                        "$numberInt": "2015"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "447"
+                    },
+                    "hispanic": {
+                        "$numberInt": "39"
+                    },
+                    "white": {
+                        "$numberInt": "133"
+                    },
+                    "other": {
+                        "$numberInt": "68"
+                    },
+                    "total": {
+                        "$numberInt": "687"
+                    }
+                }
+            }
+        ],
+        "firstYear": {
+            "$numberInt": "2005"
+        },
+        "lastYear": {
+            "$numberInt": "2014"
+        },
+        "yearsOfData": {
+            "$numberInt": "10"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "68d6ad7c32eb2f8c39112b91"
+        },
+        "schoolId": "80105",
+        "name": "WALTER J. MITCHELL ELEMENTARY",
+        "location": {
+            "address": "400 Willow Lane",
+            "city": "La Plata",
+            "state": "MD",
+            "zipCode": "20646",
+            "coordinates": {
+                "type": "Point",
+                "coordinates": [
+                    {
+                        "$numberDouble": "-76.9694544"
+                    },
+                    {
+                        "$numberDouble": "38.5194643"
+                    }
+                ]
+            }
+        },
+        "level": "E",
+        "levelFull": "Elementary",
+        "yearlyData": [
+            {
+                "academicYear": {
+                    "full": "2005-2006",
+                    "short": "05-06",
+                    "startYear": {
+                        "$numberInt": "2005"
+                    },
+                    "endYear": {
+                        "$numberInt": "2006"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "104"
+                    },
+                    "hispanic": {
+                        "$numberInt": "8"
+                    },
+                    "white": {
+                        "$numberInt": "480"
+                    },
+                    "other": {
+                        "$numberInt": "21"
+                    },
+                    "total": {
+                        "$numberInt": "613"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2006-2007",
+                    "short": "06-07",
+                    "startYear": {
+                        "$numberInt": "2006"
+                    },
+                    "endYear": {
+                        "$numberInt": "2007"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "115"
+                    },
+                    "hispanic": {
+                        "$numberInt": "10"
+                    },
+                    "white": {
+                        "$numberInt": "459"
+                    },
+                    "other": {
+                        "$numberInt": "27"
+                    },
+                    "total": {
+                        "$numberInt": "611"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2007-2008",
+                    "short": "07-08",
+                    "startYear": {
+                        "$numberInt": "2007"
+                    },
+                    "endYear": {
+                        "$numberInt": "2008"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "102"
+                    },
+                    "hispanic": {
+                        "$numberInt": "13"
+                    },
+                    "white": {
+                        "$numberInt": "445"
+                    },
+                    "other": {
+                        "$numberInt": "29"
+                    },
+                    "total": {
+                        "$numberInt": "589"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2008-2009",
+                    "short": "08-09",
+                    "startYear": {
+                        "$numberInt": "2008"
+                    },
+                    "endYear": {
+                        "$numberInt": "2009"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "94"
+                    },
+                    "hispanic": {
+                        "$numberInt": "18"
+                    },
+                    "white": {
+                        "$numberInt": "455"
+                    },
+                    "other": {
+                        "$numberInt": "22"
+                    },
+                    "total": {
+                        "$numberInt": "589"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2009-2010",
+                    "short": "09-10",
+                    "startYear": {
+                        "$numberInt": "2009"
+                    },
+                    "endYear": {
+                        "$numberInt": "2010"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "109"
+                    },
+                    "hispanic": {
+                        "$numberInt": "19"
+                    },
+                    "white": {
+                        "$numberInt": "474"
+                    },
+                    "other": {
+                        "$numberInt": "20"
+                    },
+                    "total": {
+                        "$numberInt": "622"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2010-2011",
+                    "short": "10-11",
+                    "startYear": {
+                        "$numberInt": "2010"
+                    },
+                    "endYear": {
+                        "$numberInt": "2011"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "95"
+                    },
+                    "hispanic": {
+                        "$numberInt": "19"
+                    },
+                    "white": {
+                        "$numberInt": "466"
+                    },
+                    "other": {
+                        "$numberInt": "50"
+                    },
+                    "total": {
+                        "$numberInt": "630"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2011-2012",
+                    "short": "11-12",
+                    "startYear": {
+                        "$numberInt": "2011"
+                    },
+                    "endYear": {
+                        "$numberInt": "2012"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "93"
+                    },
+                    "hispanic": {
+                        "$numberInt": "23"
+                    },
+                    "white": {
+                        "$numberInt": "485"
+                    },
+                    "other": {
+                        "$numberInt": "50"
+                    },
+                    "total": {
+                        "$numberInt": "651"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2012-2013",
+                    "short": "12-13",
+                    "startYear": {
+                        "$numberInt": "2012"
+                    },
+                    "endYear": {
+                        "$numberInt": "2013"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "91"
+                    },
+                    "hispanic": {
+                        "$numberInt": "31"
+                    },
+                    "white": {
+                        "$numberInt": "491"
+                    },
+                    "other": {
+                        "$numberInt": "61"
+                    },
+                    "total": {
+                        "$numberInt": "674"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2013-2014",
+                    "short": "13-14",
+                    "startYear": {
+                        "$numberInt": "2013"
+                    },
+                    "endYear": {
+                        "$numberInt": "2014"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "89"
+                    },
+                    "hispanic": {
+                        "$numberInt": "38"
+                    },
+                    "white": {
+                        "$numberInt": "481"
+                    },
+                    "other": {
+                        "$numberInt": "65"
+                    },
+                    "total": {
+                        "$numberInt": "673"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2014-2015",
+                    "short": "14-15",
+                    "startYear": {
+                        "$numberInt": "2014"
+                    },
+                    "endYear": {
+                        "$numberInt": "2015"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "117"
+                    },
+                    "hispanic": {
+                        "$numberInt": "41"
+                    },
+                    "white": {
+                        "$numberInt": "469"
+                    },
+                    "other": {
+                        "$numberInt": "57"
+                    },
+                    "total": {
+                        "$numberInt": "684"
+                    }
+                }
+            }
+        ],
+        "firstYear": {
+            "$numberInt": "2005"
+        },
+        "lastYear": {
+            "$numberInt": "2014"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "68d6ad7c32eb2f8c39112b92"
+        },
+        "schoolId": "80106",
+        "name": "LA PLATA HIGH SCHOOL",
+        "location": {
+            "address": "6035 Radio Station Road",
+            "city": "La Plata",
+            "state": "MD",
+            "zipCode": "20646",
+            "coordinates": {
+                "type": "Point",
+                "coordinates": [
+                    {
+                        "$numberDouble": "-76.9502506"
+                    },
+                    {
+                        "$numberDouble": "38.5462317"
+                    }
+                ]
+            }
+        },
+        "level": "H",
+        "levelFull": "High",
+        "yearlyData": [
+            {
+                "academicYear": {
+                    "full": "2005-2006",
+                    "short": "05-06",
+                    "startYear": {
+                        "$numberInt": "2005"
+                    },
+                    "endYear": {
+                        "$numberInt": "2006"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "387"
+                    },
+                    "hispanic": {
+                        "$numberInt": "19"
+                    },
+                    "white": {
+                        "$numberInt": "1173"
+                    },
+                    "other": {
+                        "$numberInt": "36"
+                    },
+                    "total": {
+                        "$numberInt": "1615"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2006-2007",
+                    "short": "06-07",
+                    "startYear": {
+                        "$numberInt": "2006"
+                    },
+                    "endYear": {
+                        "$numberInt": "2007"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "356"
+                    },
+                    "hispanic": {
+                        "$numberInt": "24"
+                    },
+                    "white": {
+                        "$numberInt": "1161"
+                    },
+                    "other": {
+                        "$numberInt": "37"
+                    },
+                    "total": {
+                        "$numberInt": "1578"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2007-2008",
+                    "short": "07-08",
+                    "startYear": {
+                        "$numberInt": "2007"
+                    },
+                    "endYear": {
+                        "$numberInt": "2008"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "311"
+                    },
+                    "hispanic": {
+                        "$numberInt": "28"
+                    },
+                    "white": {
+                        "$numberInt": "1136"
+                    },
+                    "other": {
+                        "$numberInt": "39"
+                    },
+                    "total": {
+                        "$numberInt": "1514"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2008-2009",
+                    "short": "08-09",
+                    "startYear": {
+                        "$numberInt": "2008"
+                    },
+                    "endYear": {
+                        "$numberInt": "2009"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "280"
+                    },
+                    "hispanic": {
+                        "$numberInt": "26"
+                    },
+                    "white": {
+                        "$numberInt": "1062"
+                    },
+                    "other": {
+                        "$numberInt": "40"
+                    },
+                    "total": {
+                        "$numberInt": "1408"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2009-2010",
+                    "short": "09-10",
+                    "startYear": {
+                        "$numberInt": "2009"
+                    },
+                    "endYear": {
+                        "$numberInt": "2010"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "277"
+                    },
+                    "hispanic": {
+                        "$numberInt": "31"
+                    },
+                    "white": {
+                        "$numberInt": "1032"
+                    },
+                    "other": {
+                        "$numberInt": "48"
+                    },
+                    "total": {
+                        "$numberInt": "1388"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2010-2011",
+                    "short": "10-11",
+                    "startYear": {
+                        "$numberInt": "2010"
+                    },
+                    "endYear": {
+                        "$numberInt": "2011"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "259"
+                    },
+                    "hispanic": {
+                        "$numberInt": "53"
+                    },
+                    "white": {
+                        "$numberInt": "1000"
+                    },
+                    "other": {
+                        "$numberInt": "84"
+                    },
+                    "total": {
+                        "$numberInt": "1396"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2011-2012",
+                    "short": "11-12",
+                    "startYear": {
+                        "$numberInt": "2011"
+                    },
+                    "endYear": {
+                        "$numberInt": "2012"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "276"
+                    },
+                    "hispanic": {
+                        "$numberInt": "53"
+                    },
+                    "white": {
+                        "$numberInt": "1011"
+                    },
+                    "other": {
+                        "$numberInt": "103"
+                    },
+                    "total": {
+                        "$numberInt": "1443"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2012-2013",
+                    "short": "12-13",
+                    "startYear": {
+                        "$numberInt": "2012"
+                    },
+                    "endYear": {
+                        "$numberInt": "2013"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "283"
+                    },
+                    "hispanic": {
+                        "$numberInt": "47"
+                    },
+                    "white": {
+                        "$numberInt": "1016"
+                    },
+                    "other": {
+                        "$numberInt": "112"
+                    },
+                    "total": {
+                        "$numberInt": "1458"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2013-2014",
+                    "short": "13-14",
+                    "startYear": {
+                        "$numberInt": "2013"
+                    },
+                    "endYear": {
+                        "$numberInt": "2014"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "307"
+                    },
+                    "hispanic": {
+                        "$numberInt": "45"
+                    },
+                    "white": {
+                        "$numberInt": "944"
+                    },
+                    "other": {
+                        "$numberInt": "116"
+                    },
+                    "total": {
+                        "$numberInt": "1412"
+                    }
+                }
+            },
+            {
+                "academicYear": {
+                    "full": "2014-2015",
+                    "short": "14-15",
+                    "startYear": {
+                        "$numberInt": "2014"
+                    },
+                    "endYear": {
+                        "$numberInt": "2015"
+                    }
+                },
+                "demographics": {
+                    "black": {
+                        "$numberInt": "250"
+                    },
+                    "hispanic": {
+                        "$numberInt": "40"
+                    },
+                    "white": {
+                        "$numberInt": "861"
+                    },
+                    "other": {
+                        "$numberInt": "120"
+                    },
+                    "total": {
+                        "$numberInt": "1271"
+                    }
+                }
+            }
+        ],
+        "firstYear": {
+            "$numberInt": "2005"
+        },
+        "lastYear": {
+            "$numberInt": "2014"
+        }
+    }
+]
