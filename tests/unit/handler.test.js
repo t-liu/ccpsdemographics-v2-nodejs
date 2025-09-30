@@ -15,6 +15,10 @@ describe('Handler Unit Tests', () => {
 
   beforeEach(() => {
     jest.clearAllMocks();
+
+    // Clear the cached database connection
+    jest.resetModules();
+
     mockCollection = {
       find: jest.fn().mockReturnThis(),
       findOne: jest.fn(),
@@ -40,12 +44,10 @@ describe('Handler Unit Tests', () => {
     });
 
     it('should handle errors', async () => {
-      mockCollection.find.mockImplementation(() => {
-        throw new Error('Database error');
-      });
-
+      mockCollection.toArray.mockRejectedValue(new Error('Database error'));
+    
       const result = await getAllSchools({});
-
+    
       expect(result.statusCode).toBe(500);
       expect(JSON.parse(result.body)).toEqual({ error: 'Internal Server Error' });
     });
@@ -73,6 +75,7 @@ describe('Handler Unit Tests', () => {
     });
 
     it('should return empty array for non-existent academic year', async () => {
+      mockCollection.find.mockReturnThis();
       mockCollection.toArray.mockResolvedValue([]);
 
       const result = await getSchoolsByYear({

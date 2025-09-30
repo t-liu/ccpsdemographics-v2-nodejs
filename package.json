@@ -1,7 +1,7 @@
 {
   "name": "ccpsdemographics-v2-nodejs",
   "version": "1.0.0",
-  "description": "Serverless API to fetch data from MongoDB Atlas collection",
+  "description": "Serverless API to fetch data from a MongoDB Atlas collection",
   "main": "src/handler.js",
   "scripts": {
     "start": "serverless offline",
