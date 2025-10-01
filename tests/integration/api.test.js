@@ -48,9 +48,16 @@ beforeAll(async () => {
 });
 
 afterAll(async () => {
-  await client.close();
-  await mongod.stop();
-  await connection.close();
+  // Close the client connection
+  if (client) {
+    await client.close();
+  }
+  // Stop the in-memory MongoDB server
+  if (mongod) {
+    await mongod.stop();
+  }
+  // Clear the module cache to reset the cached DB connection
+  delete require.cache[require.resolve('../../src/handler')];
 });
 
 describe('API Integration Tests', () => {
