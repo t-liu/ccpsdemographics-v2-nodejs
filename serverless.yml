@@ -7,6 +7,7 @@ provider:
   stage: ${opt:stage, 'prod'}
   environment:
     MONGODB_URI: ${env:MONGODB_URI}
+  timeout: 10
   stackTags:
     Project: CCPS Demographics API
     Description: Node.js Serverless API for retrieving CCPS school demographic data from MongoDB
