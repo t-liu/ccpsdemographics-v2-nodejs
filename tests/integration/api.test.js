@@ -50,6 +50,7 @@ beforeAll(async () => {
 afterAll(async () => {
   await client.close();
   await mongod.stop();
+  await connection.close();
 });
 
 describe('API Integration Tests', () => {
