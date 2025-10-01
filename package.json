@@ -27,6 +27,7 @@
     "mongodb-memory-server": "^10.2.1",
     "serverless": "^3.38.0",
     "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-esbuild": "^1.55.1",
     "serverless-offline": "^13.3.3",
     "supertest": "^7.1.4"
   },
