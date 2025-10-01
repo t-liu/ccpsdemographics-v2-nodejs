@@ -1,9 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const { getAllSchools, getSchoolsByYear, getSchoolById } = require('../../src/handler');
-const { MongoClient } = require('mongodb');
-
-jest.mock('mongodb');
 
 // Load fixture data
 const fixturePath = path.join(__dirname, '../fixtures/schools.json');
@@ -12,12 +8,16 @@ const schoolsFixture = JSON.parse(fs.readFileSync(fixturePath, 'utf8'));
 describe('Handler Unit Tests', () => {
   let mockDb;
   let mockCollection;
+  let getAllSchools, getSchoolsByYear, getSchoolById;
+  let MongoClient;
 
   beforeEach(() => {
     jest.clearAllMocks();
-
-    // Clear the cached database connection
     jest.resetModules();
+    
+    // Mock mongodb AFTER resetModules
+    jest.mock('mongodb');
+    MongoClient = require('mongodb').MongoClient;
 
     mockCollection = {
       find: jest.fn().mockReturnThis(),
@@ -27,7 +27,18 @@ describe('Handler Unit Tests', () => {
     mockDb = {
       collection: jest.fn().mockReturnValue(mockCollection),
     };
-    MongoClient.connect.mockResolvedValue({ db: () => mockDb });
+    
+    // Create mock client with db method
+    const mockClient = {
+      db: jest.fn().mockReturnValue(mockDb)
+    };
+    MongoClient.connect = jest.fn().mockResolvedValue(mockClient);
+
+    // Require handler AFTER setting up mocks
+    const handler = require('../../src/handler');
+    getAllSchools = handler.getAllSchools;
+    getSchoolsByYear = handler.getSchoolsByYear;
+    getSchoolById = handler.getSchoolById;
   });
 
   describe('getAllSchools', () => {
@@ -75,7 +86,6 @@ describe('Handler Unit Tests', () => {
     });
 
     it('should return empty array for non-existent academic year', async () => {
-      mockCollection.find.mockReturnThis();
       mockCollection.toArray.mockResolvedValue([]);
 
       const result = await getSchoolsByYear({
