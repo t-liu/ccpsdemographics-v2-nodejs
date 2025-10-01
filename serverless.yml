@@ -4,8 +4,14 @@ provider:
   name: aws
   runtime: nodejs20.x
   region: us-east-1
+  stage: ${opt:stage, 'prod'}
   environment:
     MONGODB_URI: ${env:MONGODB_URI}
+  stackTags:
+    Project: CCPS Demographics API
+    Description: Node.js Serverless API for retrieving CCPS school demographic data from MongoDB
+    Environment: Production
+    ManagedBy: Serverless Framework
   iam:
     role:
       statements:
@@ -36,6 +42,8 @@ package:
 functions:
   getSchools:
     handler: src/handler.getAllSchools
+    name: ccpsdemographics-v2-api-getAllSchools
+    description: Retrieves all schools from the database
     events:
       - http:
           path: /schools
@@ -43,6 +51,8 @@ functions:
           cors: true
   getSchoolsByYear:
     handler: src/handler.getSchoolsByYear
+    name: ccpsdemographics-v2-api-getSchoolsByYear
+    description: Retrieves schools filtered by academic year
     events:
       - http:
           path: /schools/year/{academicYear}
@@ -50,6 +60,8 @@ functions:
           cors: true
   getSchoolById:
     handler: src/handler.getSchoolById
+    name: ccpsdemographics-v2-api-getSchoolById
+    description: Retrieves a specific school by its ID
     events:
       - http:
           path: /schools/{schoolId}
