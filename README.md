@@ -50,7 +50,7 @@ touch .env
 Add your MongoDB connection string:
 
 ```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/project?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://username:pa$$w0RD@cluster.mongodb.net/project?retryWrites=true&w=majority
 ```
 
 **Note:** Replace `username`, `password`, `cluster`, and `project` with your actual MongoDB Atlas credentials and database name.
