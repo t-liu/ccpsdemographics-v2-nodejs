@@ -6,6 +6,7 @@
   "scripts": {
     "start": "serverless offline",
     "deploy": "node -r dotenv/config ./node_modules/.bin/serverless deploy",
+    "lint": "eslint .",
     "test": "jest",
     "test:unit": "jest tests/unit",
     "test:integration": "jest tests/integration",
@@ -25,8 +26,11 @@
     "mongodb": "^6.20.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@shelf/jest-mongodb": "^4.3.2",
     "dotenv": "^16.4.5",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
     "jest": "^29.7.0",
     "mongodb-memory-server": "^10.2.1",
     "serverless": "^4.25.0",
