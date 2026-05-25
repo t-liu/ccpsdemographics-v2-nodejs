@@ -17,7 +17,7 @@ async function connectToDatabase() {
   return cachedDb;
 }
 
-module.exports.getAllSchools = async (event) => {
+module.exports.getAllSchools = async (_event) => {
   try {
     const db = await connectToDatabase();
     const collection = db.collection('schools');
