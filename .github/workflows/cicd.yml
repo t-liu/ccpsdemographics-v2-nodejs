@@ -8,8 +8,19 @@ on:
     branches:
       - main
 
+env:
+  NODE_VERSION: '24'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
 jobs:
   lint:
+    timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -18,7 +29,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
 
       - name: Install dependencies
@@ -27,8 +38,9 @@ jobs:
       - name: Run linting
         run: npm run lint
 
-  test:
+  security:
     needs: lint
+    timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -37,7 +49,30 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Gitleaks scan
+        uses: gitleaks/gitleaks-action@v2
+
+      - name: Audit dependencies
+        run: npm audit --audit-level=moderate
+
+  test:
+    needs: security
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
 
       - name: Install dependencies
@@ -51,9 +86,31 @@ jobs:
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI_TEST }}
 
-  deploy:
+  build:
     needs: test
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate serverless package
+        run: npx serverless package
+
+  deploy:
+    needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -62,7 +119,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
 
       - name: Install dependencies
