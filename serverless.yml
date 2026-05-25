@@ -1,5 +1,6 @@
 org: tliu301
 app: ccpsdemographics
+frameworkVersion: ~4.36.1
 service: ccpsdemographics-v2-api
 
 provider:
