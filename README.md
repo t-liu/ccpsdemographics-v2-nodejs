@@ -17,7 +17,7 @@ A serverless Node.js API for retrieving Charles County Public Schools demographi
 
 ## 📋 Prerequisites
 
-- **Node.js** 20.x or higher
+- **Node.js** 24.x or higher
 - **npm** (comes with Node.js)
 - **MongoDB Atlas** account with a cluster set up
 - **AWS Account** with appropriate IAM permissions
@@ -306,6 +306,7 @@ GitHub Actions → AWS CloudFormation → AWS Lambda Functions
 - **getSchoolById**: Retrieves a specific school by ID
 
 Each function:
+- Runs on AWS Lambda `nodejs24.x`
 - Has 10-second timeout
 - Uses 512MB memory
 - Implements connection caching for MongoDB
