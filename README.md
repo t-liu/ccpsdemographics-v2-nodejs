@@ -13,7 +13,7 @@ A serverless Node.js API for retrieving Charles County Public Schools demographi
 - **Automated CI/CD** pipeline with GitHub Actions
 - **Comprehensive testing** with unit and integration tests
 - **Code coverage** reporting with Codecov integration
-- **Optimized deployments** using serverless-esbuild for bundle size reduction
+- **Optimized deployments** using Serverless Framework v4 built-in esbuild bundling
 
 ## 📋 Prerequisites
 
@@ -86,12 +86,7 @@ Or use the Serverless Offline plugin:
 npm install --save-dev serverless-offline
 ```
 
-Add to `serverless.yml`:
-```yaml
-plugins:
-  - serverless-esbuild
-  - serverless-offline
-```
+`serverless.yml` already includes `serverless-offline` and built-in esbuild bundling (Serverless v4).
 
 Then run:
 ```bash
