@@ -7,6 +7,8 @@ provider:
   runtime: nodejs24.x
   region: us-east-1
   stage: ${opt:stage, 'prod'}
+  apiGateway:
+    minimumCompressionSize: 1024
   environment:
     MONGODB_URI: ${env:MONGODB_URI}
   timeout: 10

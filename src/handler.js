@@ -28,6 +28,7 @@ module.exports.getAllSchools = async (_event) => {
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 'public, max-age=86400, stale-while-revalidate=3600'
       },
       body: JSON.stringify(schools),
     };
@@ -53,6 +54,7 @@ module.exports.getSchoolsByYear = async (event) => {
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*',
+          'Cache-Control': 'public, max-age=86400, stale-while-revalidate=3600'
         },
         body: JSON.stringify({ error: 'Academic year is required' }),
       };
@@ -94,6 +96,7 @@ module.exports.getSchoolById = async (event) => {
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*',
+          'Cache-Control': 'public, max-age=86400, stale-while-revalidate=3600'
         },
         body: JSON.stringify({ error: 'School ID is required' }),
       };
